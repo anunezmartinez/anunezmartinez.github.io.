@@ -13,4 +13,4 @@ Hosted on Github and domain administered by Google Sites.
 
 This is a snapshot of the website showcasing light and dark mode :last_quarter_moon:
 
-![Full Webpage](assets/images/webpagescreenshot.png?raw=true "Screenshot")![Full Webpage Light](assets/images/webpagescreenshotLight.png?raw=true "Screenshot")
+![Full Webpage](assets/images/webpagescreenshot.png?raw=true "Screenshot")
