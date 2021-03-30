@@ -60,11 +60,11 @@ jQuery(document).ready(function($) {
     );
     
     
-    GitHubCalendar("#github-graph", "anunezmartinez", { responsive: true });
 
-    GitHubActivity.feed({
-        username: "anunezmartinez",
-        selector: "#ghfeed",
-	    limit: 10,
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "anunezmartinez", {
+        responsive: true,
+        tooltips: true
     });
+    
 });
