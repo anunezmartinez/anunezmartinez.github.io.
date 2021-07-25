@@ -63,8 +63,7 @@ jQuery(document).ready(function($) {
 
     // or enable responsive functionality
     GitHubCalendar(".calendar", "anunezmartinez", {
-        responsive: true,
-        tooltips: true
+        responsive: true
     });
     
 });
