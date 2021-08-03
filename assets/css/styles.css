@@ -555,12 +555,6 @@ iframe {
   .container {
     width: 1250px;
   }
-  #btn-back-to-top {
-    position:fixed;
-    bottom: 60px;
-    right: 10px;
-    display: none;
-  }
 }
 
 
