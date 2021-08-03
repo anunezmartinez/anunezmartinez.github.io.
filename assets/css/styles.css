@@ -525,6 +525,9 @@ iframe {
 }
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  #btn-back-to-top {
+    display: hidden;
+  }
   .header {
     text-align: center;
   }
@@ -550,7 +553,13 @@ iframe {
 /* Ex-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
   .container {
-    width: 1360px;
+    width: 1250px;
+  }
+  #btn-back-to-top {
+    position:fixed;
+    bottom: 60px;
+    right: 10px;
+    display: none;
   }
 }
 
