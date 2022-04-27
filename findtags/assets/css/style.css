@@ -43,7 +43,7 @@ body{
 	font-size:16px;
 	color:#a09e9c;
 	background: #fff;
-    text-transform: capitalize;
+    text-transform: ;
     max-width:1920px;
     margin:0 auto;
 	overflow-x:hidden;
@@ -794,7 +794,7 @@ span.feature-review {margin-left: 10px;}
     -o-transform:scale(1);
     transform:scale(1);
 }
-.single-blog-txt h2 a{text-transform: initial;margin: 0 0 15px 0;}
+.single-blog-txt h2 a{margin: 0 0 15px 0;}
 .single-blog-txt h3,.single-blog-txt h3 a {
     color: #bcb7b2;
     font-size: 14px;
