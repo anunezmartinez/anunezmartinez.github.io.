@@ -1,0 +1,334 @@
+/* Hero Section */
+.hero {
+    padding: 160px 0 100px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    margin: 0 auto 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+    box-shadow: var(--card-shadow);
+}
+.avatar img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+
+.intro {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s forwards 0.2s;
+}
+
+.tagline {
+    font-size: 24px;
+    color: var(--light-text);
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards 0.4s;
+}
+
+.highlight {
+    display: inline-block;
+    position: relative;
+    background: linear-gradient(135deg, #3ac83a 0%, #66d266 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(72, 230, 72, 0.2);
+    z-index: -1;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Enhance background on hover */
+.highlight:hover::after {
+    background-color: rgba(72, 230, 72, 0.4);
+    bottom: 7px;
+    transform: translateY(-2px);
+}
+
+/* Text effect on hover */
+.highlight:hover {
+    background: linear-gradient(135deg, #48e648 0%, #7dff7d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transform: translateY(-2px);
+}
+
+/* Dark mode adjustments */
+html.dark-mode .highlight {
+    background: linear-gradient(135deg, #3ac83a 0%, #66d266 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+html.dark-mode .highlight::after {
+    background-color: rgba(72, 230, 72, 0.2);
+}
+
+html.dark-mode .highlight:hover {
+    background: linear-gradient(135deg, #48e648 0%, #7dff7d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+html.dark-mode .highlight:hover::after {
+    background-color: rgba(72, 230, 72, 0.4);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--light-text);
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Leadership Section */
+.leadership-section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--section-bg);
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-cta-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Experience Section */
+.experience-section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--section-bg);
+}
+
+/* Education Section */
+.education-section {
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--section-bg);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    display: flex;
+    flex-direction: column; 
+    height: 50%;
+
+    justify-content: space-between;
+
+    margin-top: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    
+}
+
+
+.testimonials-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.testimonials-slider {
+    position: relative;
+    height: 60%;
+    min-height: 280px; /* Add minimum height to prevent layout shifts */
+}
+/* Language Item Styles */
+.language-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+html.dark-mode .language-item {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+.language-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.language-level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level-indicator {
+    display: flex;
+    gap: 4px;
+}
+
+.level-filled, 
+.level-empty {
+    width: 32px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+.level-filled {
+    background-color: var(--primary-color);
+}
+
+.level-empty {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+html.dark-mode .level-empty {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.level-text {
+    font-size: 14px;
+    color: var(--light-text);
+}
+
+/* Certification Item Styles */
+.certification-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+html.dark-mode .certification-item {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+}
+
+.certification-logo {
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.certification-details {
+    flex-grow: 1;
+}
+
+.certification-details h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.cert-issuer {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 2px;
+}
+
+.cert-date {
+    font-size: 12px;
+    color: var(--light-text);
+}
+
+.certification-badge {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+
+.certification-badge svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-color);
+}
